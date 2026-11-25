@@ -4,5 +4,3 @@ queue_rules:
   - name: default
     merge_conditions:
       - -draft
-
-# research: temporary conflict-resolution probe
