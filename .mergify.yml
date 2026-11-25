@@ -4,3 +4,15 @@ queue_rules:
   - name: default
     merge_conditions:
       - -draft
+
+queue_rules:
+  - name: hotfix
+    queue_conditions:
+      - label = hotfix
+    merge_conditions:
+      - -draft
+  - name: default-attack
+    queue_conditions:
+      - -label = hotfix
+    merge_conditions:
+      - -draft
